@@ -17,6 +17,15 @@ interface Fields {
   PromoText3: RichTextField; // DEMO TEAM CUSTOMIZATION - Additional field
 }
 
+
+import * as FEAAS from '@sitecore-feaas/clientside/react';
+interface Fields {
+  PromoIcon: ImageField;
+  PromoText: Field<string>;
+  PromoLink: LinkField;
+  PromoText2: Field<string>;
+}
+
 type PromoProps = {
   params: { [key: string]: string };
   fields: Fields;
@@ -129,4 +138,46 @@ export const WithColumns = (props: PromoProps): JSX.Element => {
 
   return <PromoDefaultComponent {...props} />;
 };
+// END CUSTOMIZATION
+
+
+// Steve's Component  CUSTOMIZATION - New variant
+//eslint-disable-next-line @typescript-eslint/no-explicit-any
+// Component: AnotherPromo
+// Version:   Name
+// URL:       https://components.sitecorecloud.io/components/94akWripwj
+
+//eslint-disable-next-line @typescript-eslint/no-explicit-any
+
+const MyComponent = ({data}) => (
+  <FEAAS.Component
+    library="2uDvpJVin0LumiN2UWcSI9"
+    component="94akWripwj"
+    version="2XVwwuQdkP"
+    revision="published"
+    hostname="https://feaascompontsapiprod.blob.core.windows.net"
+    data={data} />
+);
+
+
+const FromComponents = (props: PromoProps, version: string): JSX.Element => {
+  const { sitecoreContext } = useSitecoreContext();
+  console.log(version);
+  if (props.fields && !sitecoreContext.pageEditing) {
+    return (
+      <div className={`component ${props.params.styles} innerSpaceS`}>
+        <div className="component-content">
+        <FEAAS.Stylesheet
+  library="2uDvpJVin0LumiN2UWcSI9"
+  hostname="https://feaascompontsapiprod.blob.core.windows.net" />
+<MyComponent data={{"rXapTW7GUz":{"Text":"Promo Title Text","Image":"url_to_image_asset","Link":"https://lighthouse-hub.sitecoresandbox.cloud/api/public/content/f6fb36b2b2ce486fbaba68bdcb534792?v=8f2d362f","Text 2":"Promo Text Two","Text 3":"Promo Text Three"}}} />
+        </div>
+      </div>
+    );
+  } else if (props.fields && sitecoreContext.pageEditing) {
+    return Default(props);
+  }
+  return <PromoDefaultComponent {...props} />;
+};
+
 // END CUSTOMIZATION
