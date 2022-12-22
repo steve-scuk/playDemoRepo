@@ -9,7 +9,6 @@ import {
 } from '@sitecore-jss/sitecore-jss-nextjs';
 //
 //import * as FEAAS from '@sitecore-feaas/clientside/react';
-
 interface Fields {
   PromoIcon: ImageField;
   PromoIcon2: ImageField; // DEMO TEAM CUSTOMIZATION - Additional field
@@ -22,7 +21,6 @@ type PromoProps = {
   params: { [key: string]: string };
   fields: Fields;
 };
-
 const PromoDefaultComponent = (props: PromoProps): JSX.Element => (
   <div className={`component promo ${props.params.styles}`}>
     <div className="component-content">
@@ -30,7 +28,6 @@ const PromoDefaultComponent = (props: PromoProps): JSX.Element => (
     </div>
   </div>
 );
-
 export const Default = (props: PromoProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
   if (props.fields) {
@@ -62,10 +59,8 @@ export const Default = (props: PromoProps): JSX.Element => {
       </div>
     );
   }
-
   return <PromoDefaultComponent {...props} />;
 };
-
 export const WithText = (props: PromoProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
   if (props.fields) {
@@ -91,10 +86,8 @@ export const WithText = (props: PromoProps): JSX.Element => {
       </div>
     );
   }
-
   return <PromoDefaultComponent {...props} />;
 };
-
 // DEMO TEAM CUSTOMIZATION - New variant
 export const WithColumns = (props: PromoProps): JSX.Element => {
   if (props.fields) {
@@ -127,7 +120,6 @@ export const WithColumns = (props: PromoProps): JSX.Element => {
       </div>
     );
   }
-
   return <PromoDefaultComponent {...props} />;
 };
 // END CUSTOMIZATION
@@ -167,5 +159,4 @@ const FromComponents = (props: PromoProps, version: string): JSX.Element => {
   }
   return <PromoDefaultComponent {...props} />;
 };
-
 // END CUSTOMIZATION */
