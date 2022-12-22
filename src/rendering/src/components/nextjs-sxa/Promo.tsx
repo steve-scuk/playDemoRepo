@@ -8,6 +8,8 @@ import {
   RichTextField,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 
+import * as FEAAS from '@sitecore-feaas/clientside/react';
+
 interface Fields {
   PromoIcon: ImageField;
   PromoIcon2: ImageField; // DEMO TEAM CUSTOMIZATION - Additional field
@@ -18,13 +20,8 @@ interface Fields {
 }
 
 
-import * as FEAAS from '@sitecore-feaas/clientside/react';
-interface Fields {
-  PromoIcon: ImageField;
-  PromoText: Field<string>;
-  PromoLink: LinkField;
-  PromoText2: Field<string>;
-}
+
+
 
 type PromoProps = {
   params: { [key: string]: string };
