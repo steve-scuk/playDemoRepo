@@ -7,8 +7,8 @@ import {
   LinkField,
   RichTextField,
 } from '@sitecore-jss/sitecore-jss-nextjs';
-
-import * as FEAAS from '@sitecore-feaas/clientside/react';
+//
+//import * as FEAAS from '@sitecore-feaas/clientside/react';
 
 interface Fields {
   PromoIcon: ImageField;
@@ -146,7 +146,7 @@ export const WithColumns = (props: PromoProps): JSX.Element => {
 
 //eslint-disable-next-line @typescript-eslint/no-explicit-any
 //FFS just work
-
+/* 
 const MyComponent = ({data}: any) => (
   <FEAAS.Component
     library="2uDvpJVin0LumiN2UWcSI9"
@@ -178,4 +178,4 @@ const FromComponents = (props: PromoProps, version: string): JSX.Element => {
   return <PromoDefaultComponent {...props} />;
 };
 
-// END CUSTOMIZATION
+// END CUSTOMIZATION */
