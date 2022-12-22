@@ -145,6 +145,7 @@ export const WithColumns = (props: PromoProps): JSX.Element => {
 // URL:       https://components.sitecorecloud.io/components/94akWripwj
 
 //eslint-disable-next-line @typescript-eslint/no-explicit-any
+//FFS just work
 
 const MyComponent = ({data}: any) => (
   <FEAAS.Component
