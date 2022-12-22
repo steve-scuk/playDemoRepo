@@ -18,11 +18,6 @@ interface Fields {
   PromoText2: RichTextField; // DEMO TEAM CUSTOMIZATION - Change to RichTextField
   PromoText3: RichTextField; // DEMO TEAM CUSTOMIZATION - Additional field
 }
-
-
-
-
-
 type PromoProps = {
   params: { [key: string]: string };
   fields: Fields;
@@ -136,14 +131,11 @@ export const WithColumns = (props: PromoProps): JSX.Element => {
   return <PromoDefaultComponent {...props} />;
 };
 // END CUSTOMIZATION
-
-
 // Steve's Component  CUSTOMIZATION - New variant
 //eslint-disable-next-line @typescript-eslint/no-explicit-any
 // Component: AnotherPromo
 // Version:   Name
 // URL:       https://components.sitecorecloud.io/components/94akWripwj
-
 //eslint-disable-next-line @typescript-eslint/no-explicit-any
 //FFS just work
 /* 
@@ -156,8 +148,6 @@ const MyComponent = ({data}: any) => (
     hostname="https://feaascompontsapiprod.blob.core.windows.net"
     data={data} />
 );
-
-
 const FromComponents = (props: PromoProps, version: string): JSX.Element => {
   const { sitecoreContext } = useSitecoreContext();
   console.log(version);
