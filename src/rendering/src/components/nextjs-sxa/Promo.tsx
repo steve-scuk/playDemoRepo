@@ -146,7 +146,7 @@ export const WithColumns = (props: PromoProps): JSX.Element => {
 
 //eslint-disable-next-line @typescript-eslint/no-explicit-any
 
-const MyComponent = ({data}) => (
+const MyComponent = ({data}: any) => (
   <FEAAS.Component
     library="2uDvpJVin0LumiN2UWcSI9"
     component="94akWripwj"
