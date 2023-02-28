@@ -1,16 +1,24 @@
-# PLAY! Summit Demo on XM Cloud
+# PLAY! Summit Demo
 
 This repository is used for the primary Sitecore DXP demo that uses:
 
-- Sitecore XM Cloud
-  - XM Cloud Pages Personalize
-  - XM Cloud Pages Analyze
+- Sitecore Experience Management (XM)
+- Sitecore Experience Edge
 - Sitecore Content Hub DAM and CMP
+- Sitecore Content Hub Edge
 - Sitecore JavaScript Services (JSS)
+- Sitecore CDP
+- Sitecore Personalize
+- Sitecore Discover
+- Sitecore OrderCloud
 - Next.js
 - Vercel
 - Tailwind CSS
 - Storybook
+
+## [📖 Documentation](docs/README.md)
+
+The setup, installation, development, and usage documentation is available in the [docs folder](docs/README.md).
 
 ## ⚠ Important notice
 
@@ -30,19 +38,19 @@ Please do not submit usage questions via GitHub.
 
 ### Bug reports
 
-You can use GitHub to submit [bug reports](https://github.com/Sitecore/Sitecore.Demo.XmCloud.PlaySummit/issues/new) for PLAY! Summit.
+You can use GitHub to submit [bug reports](https://github.com/Sitecore/Sitecore.Demo.Edge/issues/new) for PLAY! Summit.
 
 ### Feature requests
 
-You can use GitHub to submit [feature requests](https://github.com/Sitecore/Sitecore.Demo.XmCloud.PlaySummit/issues/new) for PLAY! Summit.
+You can use GitHub to submit [feature requests](https://github.com/Sitecore/Sitecore.Demo.Edge/issues/new) for PLAY! Summit.
 
 ### Contribute
 
-Contributions are always welcome by submitting [pull requests](https://github.com/Sitecore/Sitecore.Demo.XmCloud.PlaySummit/pulls) on GitHub!
+Contributions are always welcome by submitting [pull requests](https://github.com/Sitecore/Sitecore.Demo.Edge/pulls) on GitHub!
 
 ### License
 
-Please read the [LICENSE](https://github.com/Sitecore/Sitecore.Demo.XmCloud.PlaySummit/blob/main/LICENSE) carefully prior to using the code in this repository.
+Please read the [LICENSE](https://github.com/Sitecore/Sitecore.Demo.Edge/blob/main/LICENSE) carefully prior to using the code in this repository.
 
 ### Warranty
 
