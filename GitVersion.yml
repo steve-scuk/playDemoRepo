@@ -12,13 +12,6 @@ branches:
     increment: Patch
     prevent-increment-of-merged-branch-version: false
     is-mainline: false
-  integration:
-    regex: ^integration
-    tag: alpha
-    increment: Inherit
-    is-mainline: false
-    source-branches:
-    - develop
   main:
     tag: ''
     increment: Patch

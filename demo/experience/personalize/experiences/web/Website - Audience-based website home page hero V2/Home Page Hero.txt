@@ -1,3 +1,0 @@
-{
-  "decisionOffers": ${toJSON(offers)}
-}
